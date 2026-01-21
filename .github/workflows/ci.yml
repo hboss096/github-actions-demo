@@ -16,8 +16,8 @@ jobs:
       - name: Run a simple command
         run: echo "Hello from GitHub Actions!"
 
-      - name: Run a script
-        run: |
+      - name: Run shell script
+        run: ./hello.sh
           echo "This pipeline runs automatically"
           echo "CI/CD basics learned"
 
