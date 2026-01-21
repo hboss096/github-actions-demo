@@ -8,4 +8,4 @@ This project demonstrates a simple CI pipeline using GitHub Actions.
 - Executes shell commands and scripts
 
 ### Why this matters
-This shows understanding of CI/CD fundamentals, automation, and DevOps practices.
+This shows understanding of CI/CD fundamentals, automation, and DevOps practices. 
