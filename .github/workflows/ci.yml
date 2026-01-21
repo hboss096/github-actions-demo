@@ -1,24 +1,16 @@
-name: Simple CI Pipeline
+steps:
+  - name: Checkout code
+    uses: actions/checkout@v4
 
-on:
-  push:
-    branches:
-      - main
+  - name: Run a simple command
+    run: echo "Hello from GitHub Actions!"
 
-jobs:
-  build:
-    runs-on: ubuntu-latest
+  - name: Give execute permission to hello.sh
+    run: chmod +x hello.sh
 
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
-      - name: Run a simple command
-        run: echo "Hello from GitHub Actions!"
-
-      - name: Run shell script
-        run: |
-          ./hello.sh
-          echo "This pipeline runs automatically"
-          echo "CI/CD basics learned"
+  - name: Run shell script
+    run: |
+      ./hello.sh
+      echo "This pipeline runs automatically"
+      echo "CI/CD basics learned"
 
