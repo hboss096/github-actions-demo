@@ -1,11 +1,14 @@
-## GitHub Actions CI Demo
+## CI/CD Auto Deploy to EC2
 
-This project demonstrates a simple CI pipeline using GitHub Actions.
+### Overview
+This project demonstrates a CI/CD pipeline that automatically deploys a web application to an AWS EC2 instance using GitHub Actions.
 
 ### What it does
-- Triggers on every push to main branch
-- Runs on Ubuntu runner
-- Executes shell commands and scripts
+- Triggers on push to main branch
+- Connects to EC2 using SSH
+- Deploys files automatically
+- Restarts Nginx
 
-### Why this matters
-This shows understanding of CI/CD fundamentals, automation, and DevOps practices. 
+### Tools used
+GitHub Actions, AWS EC2, Nginx, SSH, Linux
+
